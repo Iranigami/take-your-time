@@ -1,10 +1,12 @@
 import logo from '../assets/svg/logo.svg'
 import line from '../assets/png/draw-line.png'
 import box from '../assets/png/draw-box.png'
+import tg from '../assets/png/tg.png'
+import mail from '../assets/png/mail.png'
 
 export default function Header() {
   const tgUrl = 't.me/iranigami'
-  const emailUrl = ''
+  const emailUrl = 'mailto:iranigami@mail.ru'
   return (
     <div className='w-full h-[71px] flex items-center px-12 py-3 justify-between mb-[50px]'>
       <div className='hidden h-full md:flex gap-3 items-center'>
@@ -69,8 +71,24 @@ export default function Header() {
             Notes
           </a>
         </div>
-        <div className='w-[200px]'>
-
+        <div className='w-[200px] flex justify-between'>
+          <a href={tgUrl}>
+            <img
+              src={tg}
+              alt='tg link'
+              className='hover:scale-110 transition duration-150'
+            />
+          </a>
+          <a href={emailUrl}>
+            <img
+              src={mail}
+              alt='tg link'
+              className='hover:scale-110 transition duration-150'
+            />
+          </a>
+          <div className='font-miki tracking-[3px] text-very-black font-semibold text-[25px] w-[48px] h-[50px] items-center justify-center flex'>
+            EN
+          </div>
         </div>
       <img 
         src={line}
