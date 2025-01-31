@@ -24,13 +24,17 @@ export default function HomePage(){
                 <div className='font-miki tracking-[3px] text-very-black text-[40px]'>
                 Welcome to the world of effective time and goal management! Our app is designed specifically for those who strive to achieve more every day, whether it is study, work or personal projects.
                 </div>
-                <button className='w-[296px] h-[76px] mt-[20px] justify-center items-center  flex bg-white text-very-black font-semibold hover:text-very-white transition duration-150 hover:bg-[#000000] hover:scale-110'>
+                <button 
+                    className='w-[296px] h-[76px] mt-[20px] justify-center items-center  flex bg-white text-very-black font-semibold hover:text-very-white transition duration-150 hover:bg-[#000000] hover:scale-110'
+                    onClick = {()=>{setTutorialOpen(true)}}
+                    >
+                    
                     <img
                         src={buttonOutline}
                         alt='button'
                         className='w-[300px] h-[80px] absolute'
                     />
-                    <div className='font-miki tracking-[3px] text-[40px] z-10'>
+                    <div className='font-miki tracking-[3px] text-[40px]'>
                         Start!
                     </div>
                 </button>
@@ -40,6 +44,14 @@ export default function HomePage(){
                 alt='image'
                 className='mx-auto my-auto'
             />
+
+            {isTutorialOpen && 
+            <div className='w-[75%] h-[75%] fixed absolute bg-very-white mx-auto left-0 right-0 outline outline-double outline-very-black'>
+                <button
+                    className='w-[50px] h-[50px] bg-aspide-blue'
+                    onClick = {()=>{setTutorialOpen(false)}}
+                />
+            </div>}
         </div>
     )
 }
