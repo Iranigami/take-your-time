@@ -16,22 +16,6 @@
 }
 
 @layer utilities {
-    .bg-image-check {
-      @apply bg-no-repeat bg-center;
-      /* Здесь вы можете указать путь к вашему изображению */
-      background-image: url('./assets/svg/Vector.svg');
-    }
-    .bg-image-check-white {
-      @apply bg-no-repeat bg-center;
-      /* Здесь вы можете указать путь к вашему изображению */
-      background-image: url('./assets/svg/Vector2.svg');
-    }
-    .bg-image-checkered {
-      @apply bg-no-repeat bg-center;
-      /* Здесь вы можете указать путь к вашему изображению */
-      background-image: url('./assets/svg/checkered.svg');
-    }
-
     .not-allowed {
       cursor: not-allowed !important;
  }

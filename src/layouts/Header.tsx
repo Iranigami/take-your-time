@@ -5,7 +5,7 @@ import tg from '../assets/png/tg.png'
 import mail from '../assets/png/mail.png'
 
 export default function Header() {
-  const tgUrl = 't.me/iranigami'
+  const tgUrl = 'https://t.me/iranigami/'
   const emailUrl = 'mailto:iranigami@mail.ru'
   return (
     <div className='w-full h-[71px] flex items-center px-12 py-3 justify-between mb-[50px]'>
@@ -32,7 +32,7 @@ export default function Header() {
           </a>
           <a 
             className='font-miki tracking-[3px] text-very-black font-semibold text-[25px] w-[48px] h-[50px] items-center justify-center flex'
-            href='/'>
+            href='/timer'>
             <img
               alt=''
               src={box}
@@ -42,7 +42,7 @@ export default function Header() {
           </a>
           <a 
             className='font-miki tracking-[3px] text-very-black font-semibold text-[25px] items-center justify-center flex'
-            href='/'>
+            href='/planning'>
             <img
               alt=''
               src={box}
@@ -52,7 +52,7 @@ export default function Header() {
           </a>
           <a 
             className='font-miki tracking-[3px] text-very-black font-semibold text-[25px] w-[48px] h-[50px] items-center justify-center flex'
-            href='/'>
+            href='/habits'>
             <img
               alt=''
               src={box}
@@ -62,7 +62,7 @@ export default function Header() {
           </a>
           <a 
             className='font-miki tracking-[3px] text-very-black font-semibold text-[25px] w-[48px] h-[50px] items-center justify-center flex'
-            href='/'>
+            href='/notes'>
             <img
               alt=''
               src={box}
@@ -72,11 +72,13 @@ export default function Header() {
           </a>
         </div>
         <div className='w-[200px] flex justify-between'>
-          <a href={tgUrl}>
+          <a 
+            href={tgUrl}
+            className='hover:scale-110 transition duration-150'
+            target="_blank">
             <img
               src={tg}
               alt='tg link'
-              className='hover:scale-110 transition duration-150'
             />
           </a>
           <a href={emailUrl}>

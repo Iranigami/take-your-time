@@ -1,6 +1,7 @@
 import girl from '../assets/png/girl.png'
 import line from '../assets/png/draw-line.png'
 import buttonOutline from '../assets/png/button-outline.png'
+import close from '../assets/png/close-icon.png'
 import { useState } from 'react'
 
 export default function HomePage(){
@@ -46,11 +47,17 @@ export default function HomePage(){
             />
 
             {isTutorialOpen && 
-            <div className='w-[75%] h-[75%] fixed absolute bg-very-white mx-auto left-0 right-0 outline outline-double outline-very-black'>
+            <div className='w-[75%] h-[75%] fixed absolute bg-very-white mx-auto left-0 right-0 outline outline-double outline-very-black p-2'>
                 <button
-                    className='w-[50px] h-[50px] bg-aspide-blue'
+                    className='w-[40px] h-[40px] mx-auto transition duration-250 hover:scale-125'
                     onClick = {()=>{setTutorialOpen(false)}}
-                />
+                >
+                    <img
+                        src={close}
+                        alt='close button'
+                        className='w-[40px] h-[40px]'
+                    />
+                </button>
             </div>}
         </div>
     )
