@@ -1,5 +1,7 @@
 # Take Your Time
 
+#This is work in progress project
+
 ## Software requirements
 * Node.js
 * npm
